@@ -15,8 +15,10 @@ app.listen(process.env.PORT, () => {
 });
 
 let categoryRouter = require('./routes/categoryRouter');
+let productRouter = require('./routes/productRouter')
 
 app.use('/api/category', categoryRouter);
+app.use('/api/product', productRouter)
 
 app.get('/', (req, res) => {
     res.send('Hello World!');
