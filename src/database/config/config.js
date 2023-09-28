@@ -13,6 +13,8 @@
 //     }
 // }
 
+
+const uri = process.env.MONGODB_ADDON_URI || "mongodb://localhost:27017/rocketfy_backend_db";
 module.exports =  {
-    "url": "mongodb://localhost:27017/rocketfy_backend_db"
+    "url": uri
 }
