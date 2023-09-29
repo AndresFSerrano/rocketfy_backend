@@ -2,6 +2,8 @@ const express = require('express');
 const { urlencoded, json } = require('express');
 const app = express();
 const connectionToDB = require('./database/config/database')
+const cors = require('cors')
+app.use(cors())
 
 // Para poder trabajar con archivos json
 app.use(urlencoded({ extended: false }));

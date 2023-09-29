@@ -12,7 +12,7 @@ async function getAllProducts(req, res) {
       return {
         _id: product._id,
         PRODUCT_NAME: product.PRODUCT_NAME,
-        PRODUCT: product.PRODUCT,
+        PRODUCT_DESCRIPTION: product.PRODUCT_DESCRIPTION,
         PRODUCT_SKU: product.PRODUCT_SKU,
         PRODUCT_IMAGE: product.PRODUCT_IMAGE,
         PRODUCT_CATEGORIES: categoryNames,
@@ -44,7 +44,7 @@ async function getProductById(req, res) {
       const productWithCategory = {
         _id: product._id,
         PRODUCT_NAME: product.PRODUCT_NAME,
-        PRODUCT: product.PRODUCT,
+        PRODUCT_DESCRIPTION: product.PRODUCT_DESCRIPTION,
         PRODUCT_SKU: product.PRODUCT_SKU,
         PRODUCT_IMAGE: product.PRODUCT_IMAGE,
         PRODUCT_CATEGORIES: categoryNames,
@@ -129,7 +129,7 @@ async function getProductById(req, res) {
         return {
           _id: product._id,
           PRODUCT_NAME: product.PRODUCT_NAME,
-          PRODUCT: product.PRODUCT,
+          PRODUCT_DESCRIPTION: product.PRODUCT_DESCRIPTION,
           PRODUCT_SKU: product.PRODUCT_SKU,
           PRODUCT_IMAGE: product.PRODUCT_IMAGE,
           PRODUCT_CATEGORIES: categoryNames,
